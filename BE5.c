@@ -1,0 +1,22 @@
+/*
+ * LCD.c
+ *
+ * Created: 10-Nov-20 2:34:21 PM
+ * Author: Lost Heaven
+ */
+
+#include <mega16.h>
+#include <alcd.h>  //!!!!DON'T USE "LCD.H" !!!!
+#include <delay.h>
+void main(void)
+{
+int x = 0;
+lcd_init(16);  //16 chars/line
+while (1)
+    {
+    
+    lcd_printf("Hello 0xjojo");
+    delay_ms(1000);
+    lcd_clear(); 
+    }
+}
